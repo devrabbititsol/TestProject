@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-
+import org.openqa.selenium.Dimension;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -161,7 +161,10 @@ public class BaseClass {
 		driver.manage().deleteAllCookies();
 		driver.get(configFileObj.getProperty("URL"));
 		//driver.manage().window().maximize();
-		driver.manage().window().fullscreen();
+		//driver.manage().window().fullscreen();
+		Dimension d = new Dimension(1382,744); 
+//Resize the current window to the given dimension
+driver.manage().window().setSize(d); 
 		return driver;
 	}
 	
