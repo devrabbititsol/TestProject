@@ -132,6 +132,7 @@ public class BaseClass {
 		
 		if (browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+			if (isSolaris() || isUnix()) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized"); // open Browser in maximized mode
 			options.addArguments("disable-infobars"); // disabling infobars
@@ -140,6 +141,9 @@ public class BaseClass {
 			options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 			options.addArguments("--no-sandbox"); // Bypass OS security model
 			driver = new ChromeDriver(options);
+			} else{
+				driver = new ChromeDriver();
+			}
 			System.out.println("Chrome Browser is Launched");
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", geckoFireFoxDriverPath);
