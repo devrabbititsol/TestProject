@@ -9,7 +9,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 @SuppressWarnings("unused")
 public class TestScreen extends BaseClass {
 	
-	public static String primaryInfo  = "{\"user_id\":7,\"is_generate\":false,\"is_execute\":false,\"is_web\":true,\"project_url\":\"http://www.devrabbit.com/\",\"report_upload_url\":\"https://192.168.1.142:8080/TAF_Automation_DR/UploadReportFile\",\"project_name\":\"TestProject1\",\"project_description\":\"\",\"project_id\":0,\"module_name\":\"DevrabbitTest\",\"module_description\":\"\",\"sub_module_id\":0,\"module_id\":349,\"testcase_name\":\"TC_HomePage\",\"testcase_id\":414,\"testset_name\":\"Ts_Test\",\"testset_id\":54,\"executed_timestamp\":-1731597434,\"browser_type\":\"chrome\"}";
+	public static String primaryInfo  = "{\"user_id\":7,\"is_generate\":false,\"is_execute\":false,\"is_web\":true,\"project_url\":\"http://www.devrabbit.com/\",\"report_upload_url\":\"https://192.168.1.142:8080/TAF_Automation_DR/UploadReportFile\",\"project_name\":\"TestProject1\",\"project_description\":\"\",\"project_id\":206,\"module_name\":\"DevrabbitTest\",\"module_description\":\"\",\"sub_module_id\":0,\"module_id\":349,\"testcase_name\":\"TC2_TEST\",\"testcase_id\":415,\"testset_id\":0,\"executed_timestamp\":-1727087397,\"browser_type\":\"chrome\"}";
 
 	public static String projectName = "testproject1";
 	public WebDriver driver;
